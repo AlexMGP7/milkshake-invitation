@@ -1,0 +1,96 @@
+:root {
+    --heart-color: #ff5873;
+    --hover-color: #C1275C;
+    --background-color: #ebc8c0;
+    --white: #fff;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: var(--heart-color);
+    background-image: url('images/milkshake-bg.png');
+    background-size: cover;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .card {
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    font-size: 26px;
+    margin-top: 0;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .heart {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 15px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .button {
+    background-color: var(--heart-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 120px;
+  }
+  
+  .button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .button.button__negative {
+    background-color: var(--white);
+    color: var(--heart-color);
+    border: 1px solid var(--heart-color);
+  }
+  
+  .button.button__error {
+    margin-top: 15px;
+    width: 100%;
+    display: none;
+  }
+  
+  .text {
+    font-size: 16px;
+    margin-top: 30px;
+    color: var(--heart-color);
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+  

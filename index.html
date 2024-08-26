@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación Especial</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="initial-screen" class="card">
+      <img
+        src="https://media.giphy.com/media/yNJya16yOa3uw/giphy.gif"
+        alt="Hola"
+        width="480"
+        height="269"
+        class="img-fluid"
+      />
+
+      <button class="button" id="hello-button">Hiii</button>
+    </div>
+
+    <div id="invitation-screen" class="card hidden">
+      <h1 class="title">Hola de nuevo señorita ✨</h1>
+      <h2 class="subtitle">
+        ¿Podría ser su compañía y robarle un poco de su tiempo este miércoles en
+        Ecocenter a tomar milkshakes(?
+      </h2>
+      <div class="heart">
+        <img
+          id="cat-image"
+          src="images/please-please-please.gif"
+          alt="Invitación Especial"
+          class="cat img-fluid"
+        />
+      </div>
+      <div class="text" id="response-text"></div>
+      <div class="button-container">
+        <button class="button" id="accept-button">Si milord</button>
+        <button class="button button__negative" id="reject-button">Mmm... No sé</button>
+      </div>
+      <button class="button button__error" id="error-button">Error, tienes que reiniciar</button>
+    </div>
+    <audio id="invitation-music" src="y2mate(mp3cut.net).mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
